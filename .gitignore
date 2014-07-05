@@ -1,0 +1,44 @@
+# volatile folders
+build
+tmp
+tools
+
+# build files
+gulpfile.js
+
+# node files
+node_modules
+
+# if we want a specific node module to be not-ignored
+# !node_modules/
+# node_modules/*
+# !node_modules/gulp-jst/
+# node_modules/gulp-jst/node_modules
+# !node_modules/gulp-jst/*
+
+# config files
+config/default.*
+
+# deploy directory
+dist
+
+# vendor
+vendor
+
+# binary files
+assets
+
+# ignore js files in src/coffee
+src/coffee/*.js
+src/coffee/*/*.js
+src/coffee/*/*/*.js
+test/*.js
+
+# ignore css lib files (nib)
+src/css/lib
+
+
+
+# mac
+.DS_Store
+
