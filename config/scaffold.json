@@ -1,0 +1,23 @@
+{
+    "assets": [],
+    "vendor": [
+        "//modernizr.com/downloads/modernizr-latest.js",
+        "//code.jquery.com/jquery-2.1.0.min.js"
+    ],
+    "paths": {
+        "source": {
+            "coffee": [
+                "./src/coffee/*.coffee",
+                "./src/coffee/**/*.coffee",
+                "./src/coffee/**/**/*.coffee"
+            ],
+            "stylus": "./src/css/*.styl"
+        },
+        "documentation": [
+            "./src/coffee/cli/*.coffee",
+            "./src/coffee/core/*.coffee",
+            "./src/coffee/utils/*.coffee",
+            "./src/coffee/models/*.coffee"
+        ]
+    }
+}

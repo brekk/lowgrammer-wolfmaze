@@ -13,7 +13,7 @@ In the same way that the educated populace has a basic command of mathematics, b
 
 Real languages have real constraints.
 
-Languages like Scratch][stratch] are terrible: **Flash is gross**; using an interface to make code doesn't teach you much; you should learn a whole language, and if you need to limit the environment / interface / whatever, do it through the API and encapsulation in the objects. Scratch is like SalesForce; it's written for people who don't have any real skills.
+Languages like [Scratch][scratch] are terrible: **Flash is gross**; using an interface to make code doesn't teach you much; you should learn a whole language, and if you need to limit the environment / interface / whatever, do it through the API and encapsulation in the objects. Scratch is like SalesForce; it's written for people who don't have any real skills.
 
 If you write something that doesn't compile / run in a real language, and  you fix it, and then it works, you've learned a valuable skill. If you write something in a mini-language (broadly speaking, an [educational programming language][epl]), you might have learned something, but it's not _that_ valuable. Certainly there's a place for these mini-languages, but I feel like languages that have been designed for kids:
 
@@ -21,4 +21,5 @@ If you write something that doesn't compile / run in a real language, and  you f
   * Have a learning-life expectancy
   * Are designed with limits in mind — if you learn a real language that is used by an industry, you have a skill that can get you a job!
 
+[scratch]: http://scratch.mit.edu "Scratch"
 [epl]: https://en.wikipedia.org/wiki/Educational_programming_language "Educational programming language"

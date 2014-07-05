@@ -310,31 +310,31 @@ nearestFiveMinuteTimestamp = ()->
     time = "#{month}#{date}#{year}-#{hours}#{closest5}"
     return time
 
-markdownEndpoint '/', './README.md', autoMarkdown 'Visualized - Read Me', './css/readme.css', ($)->
+markdownEndpoint '/', './README.md', autoMarkdown 'Wolfmaze - Read Me', './css/readme.css', ($)->
     # menu magic
-    menuify = ()->
-        current = $(@)
-        text = current.text()
-        if current.find('ol, ul').length == 0
-            current.text ''
-            url = lowerSlug(text)
-            link = $('<a>').attr('href', '#'+url)
-                           .text(text)
-            current.append link
-        else
-            innerLists = current.find('ul')
-            childHTML = innerLists.html()
-            childText = innerLists.text()
-            current.html ''
-            text = text.substr(0, text.indexOf(childText))
-            url = lowerSlug(text)
-            link = $('<a>').attr('href', '#'+url)
-                           .text(text)
-            current.append link
-            current.append $('<ul>').html childHTML
-            current.find('li').each menuify
+    # menuify = ()->
+    #     current = $(@)
+    #     text = current.text()
+    #     if current.find('ol, ul').length == 0
+    #         current.text ''
+    #         url = lowerSlug(text)
+    #         link = $('<a>').attr('href', '#'+url)
+    #                        .text(text)
+    #         current.append link
+    #     else
+    #         innerLists = current.find('ul')
+    #         childHTML = innerLists.html()
+    #         childText = innerLists.text()
+    #         current.html ''
+    #         text = text.substr(0, text.indexOf(childText))
+    #         url = lowerSlug(text)
+    #         link = $('<a>').attr('href', '#'+url)
+    #                        .text(text)
+    #         current.append link
+    #         current.append $('<ul>').html childHTML
+    #         current.find('li').each menuify
 
-    $('ol').eq(0).find('li').each menuify
+    # $('ol').eq(0).find('li').each menuify
 
     # convert given selectors' text content to ids
     slugify = ()->
@@ -345,7 +345,9 @@ markdownEndpoint '/', './README.md', autoMarkdown 'Visualized - Read Me', './css
     $('h1, h2, h3, h4, h5, h6').each slugify
     return $
     
-markdownEndpoint '/todo', './TODO.md', autoMarkdown('Visualized - To Do', './css/readme.css')
+markdownEndpoint '/todo', './TODO.md', autoMarkdown('Wolfmaze - To Do', './css/readme.css')
+
+makeAnEndpoint '/build', 'index'
 
 # register some additional routes that aren't transparently part of the server
 routeRegistrar '/docs', 'build'
